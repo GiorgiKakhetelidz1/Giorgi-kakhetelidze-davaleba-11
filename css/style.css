@@ -27,10 +27,11 @@
 }
 .wrapper {
     width: 100%;
-    height: 298px;
+   
    
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .wra-child {
     height: 100%;
@@ -38,11 +39,14 @@
     display: inline-block;
 }
 textarea {
+    width: 100%;
+    height: 298px;
+    resize: none;
     padding-top: 23px;
     padding-left: 21px;
     border: 2px solid rgba(212, 211, 211, 0.30);
     background: #F8F8F8;
-    color: #99999A;
+    
     font-size: 14px;
     font-family: Helvetica;
     font-style: normal;
@@ -53,9 +57,11 @@ textarea {
 .wra-child1 {
     height: 100%;
     width: 370px;
+    margin-left: 20px;
+    display: block;
     
 }
-input[type=text] {
+input[type=text], input[type=email] {
     width: 100%px;
     height: 59px;
     border: 2px solid rgba(212, 211, 211, 0.30);
@@ -64,7 +70,7 @@ input[type=text] {
 }
 .person {
     width: 100%;
-    color: #99999A;
+    
     font-size: 14px;
     font-family: Helvetica;
     font-style: normal;
@@ -73,7 +79,7 @@ input[type=text] {
     margin-bottom: 20px;
 }
 input[type=submit] {
-    width: 370px;
+    width: 100%;
     height: 59px;
     background: #5968F4;
     border-color: #5968F4;
@@ -88,6 +94,7 @@ input[type=submit]:hover {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 51px;
 }
 .info-child {
@@ -157,23 +164,27 @@ input[type=submit]:hover {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 footer {
     width: 100%;
     background-color: black;
-    height: 370px;
+   
     margin-top: 39px;
 }
 .foo {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     height: 100%;
 }
 .foo-inf {
     width: 295px;
     height: 200px;
+    margin-top: 50px;
+    margin-bottom: 40px;
     
     
 }
@@ -198,7 +209,10 @@ footer {
 .foot {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 492px;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
 .foo-inf-2 {
     width: 120px;
